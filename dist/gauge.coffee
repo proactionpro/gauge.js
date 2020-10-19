@@ -82,6 +82,7 @@ cutHex = (nStr) ->
 
 class ValueUpdater
 	animationSpeed: 32
+	complete: () ->
 	constructor: (addToAnimationQueue = true, @clear = true) ->
 		if addToAnimationQueue
 			AnimationUpdater.add(@)
@@ -97,6 +98,7 @@ class ValueUpdater
 				@displayedValue = @displayedValue + diff / @animationSpeed
 			@render()
 			return true
+		@complete()
 		return false
 
 class BaseGauge extends ValueUpdater
