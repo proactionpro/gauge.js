@@ -5,7 +5,7 @@
   "main": "dist/gauge.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:bernii/gauge.js.git"
+    "url": "git@github.com:proactionpro/gauge.js.git"
   },
   "author": "bernii",
   "license": "MIT"
